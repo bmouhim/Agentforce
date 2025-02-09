@@ -1,3 +1,56 @@
-<html>
- <p>Hello Agent !</p> 
+<!DOCTYPE HTML>
+
+<html lang=”en”>
+
+  <head>
+
+    <meta charset=”UTF-8″>
+
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+
+    <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+<style>
+BODY {
+  background-image: url('https://www.techcentral.ie/wp-content/uploads/2024/10/Agentforce.jpg');
+  height :100%;
+   background-repeat: no-repeat;
+  background-color: white;
+}
+</style>
+    
+
+  </head>
+
+  <body>
+<main>
+ <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+            console.log('Welcome to site');
+            embeddedservice_bootstrap.utilAPI.showChatButton();
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DJ9000000QZLR',
+				'Maya_Agentforce_ES',
+				'https://storm-9002cdfcd0ed5f.my.site.com/ESWMayaAgentforceES1739087957901',
+				{
+					scrt2URL: 'https://storm-9002cdfcd0ed5f.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://storm-9002cdfcd0ed5f.my.site.com/ESWMayaAgentforceES1739087957901/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</main>
+  </body>
+
 </html>
+
+
+
+
+
+
