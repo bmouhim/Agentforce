@@ -27,6 +27,13 @@ BODY {
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			var user;
+		    window.addEventListener('userInfo', function(e){
+		        user = e.detail;   
+		    });
+			window.addEventListener("onEmbeddedMessagingReady", () => {            
+				console.log( "Inside Prechat API!!" );
+				embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields( { "Quel_est_votre_statut" : user.Quel_est_votre_statut2 } );
 
 			embeddedservice_bootstrap.init(
 				'00DJ9000000QZLR',
